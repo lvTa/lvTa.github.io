@@ -16,13 +16,12 @@
 <meta property="og:description" content="Less定义Less是一种动态样式语言，属于css预处理器的范畴，它扩展了CSS 语言，增加了变量、Mixin、函数等特性，使CSS更易维护和扩展Less既可以在客户端上运行,也可以借助Node.js在服务端运行">
 <meta property="og:locale">
 <meta property="og:image" content="http://example.com/assets/images/less_extend1.png">
-<meta property="og:image" content="http://example.com/assets/images/less_extend1.1.png">
 <meta property="og:image" content="http://example.com/assets/images/less_extend2.png">
-<meta property="og:image" content="http://example.com/assets/images/less_extend4.png">
 <meta property="og:image" content="http://example.com/assets/images/less_extend3.png">
+<meta property="og:image" content="http://example.com/assets/images/less_extend4.png">
 <meta property="og:image" content="http://example.com/assets/images/less_extend5.png">
 <meta property="article:published_time" content="2021-04-14T03:14:14.000Z">
-<meta property="article:modified_time" content="2021-04-14T07:26:47.791Z">
+<meta property="article:modified_time" content="2021-04-14T07:42:10.925Z">
 <meta property="article:author" content="一笑奈何">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/assets/images/less_extend1.png">
@@ -213,7 +212,7 @@
 <p>1.普通混合：在定义的时候名称后面没有跟()，即.bordered，这样定义的类在解析成css文件时也会输出到css文件中<br>2.不带输出的混合：在定义’类’的时候名称后面跟了()，即.bordered()，这样定义的类在解析成css文件时不会输出到css文件中<br>3.带参数的混合：更灵活，但是这种情况实参和形参个数需要一致<br>    .bordered(@w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    #menu a {<br>        color: #111;<br>        .bordered(100px, 100px, pink);<br>    }<br>    .post a {<br>        color: red;<br>        .bordered(200px, 200px, blue);<br>    }<br>4.带参数且带有默认值的混合：实参和形参个数不一致时也不会报错<br>    .bordered(@w: 100px, @h: 100px, @c: #00a4ff) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>5.命名参数：当实参和形参的个数不一致时可以指定这个实参是给谁的<br>    .bordered(@w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    #menu a {<br>        color: #111;<br>        .bordered(@c: pink);<br>    }<br>6.匹配模式：在定义了多个相同的类时，可以给每个类定义一个匹配符，在调用这个类的时候根据这个匹配符来调用对应的类<br>    .bordered(T, @w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    .bordered(R, @w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    .bordered(B, @w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    .bordered(L, @w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>7.@arguments：相当于传进去的实参列表<br>    .bordered(@w, @style, @c) {<br>        border: @arguments;<br>    }<br>    #menu a {<br>        .bordered(1px, solid, #00a4ff);<br>    }</p>
 <h1 id="Less运算"><a href="#Less运算" class="headerlink" title="Less运算"></a>Less运算</h1><p>在Less中可以进行加减乘除的运算<br>在less中计算的双方只需要一方带单位即可</p>
 <h1 id="Less的继承"><a href="#Less的继承" class="headerlink" title="Less的继承"></a>Less的继承</h1><p>继承性能比混合高，但是灵活性没有混合强。把公共的样式抽取到一个类中，使用extend继承，这样编译的css文件中就不会出现公共的样式出现多次的情况</p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>1.将公共的代码放到一个类中<br><img src="/assets/images/less_extend1.png" alt="将公共的代码放到一个类中"><br>和这个类相关的状态<br><img src="/assets/images/less_extend1.1.png" alt="将公共的代码放到一个类中"><br>2.使用extend继承<br><img src="/assets/images/less_extend2.png" alt="使用extend继承"><br>如果在要继承的类后面加上all，表示把和这个类相关的所有状态都继承下来：&amp;:extend(.juzhong all);<br><img src="/assets/images/less_extend4.png"><br>3.最终编译成css文件时的样式<br><img src="/assets/images/less_extend3.png"><br>加了all<br><img src="/assets/images/less_extend5.png"></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>1.将公共的代码放到一个类中<br><img src="/assets/images/less_extend1.png" alt="将公共的代码放到一个类中"><br>和这个类相关的状态<br><img src="/assets/images/less_extend2.png" alt="和这个类相关的状态"><br>2.使用extend继承<br>如果在要继承的类后面加上all，表示把和这个类相关的所有状态都继承下来：&amp;:extend(.juzhong all);<br><img src="/assets/images/less_extend3.png" alt="使用extend继承"><br>3.最终编译成css文件时的样式<br><img src="/assets/images/less_extend4.png"><br>加了all<br><img src="/assets/images/less_extend5.png"></p>
 <h1 id="Less避免编译"><a href="#Less避免编译" class="headerlink" title="Less避免编译"></a>Less避免编译</h1><p>语法：~”需要避免编译的内容”<br>例：padding: ~”cacl(100px + 100)”<br>编译成css文件后：padding: cacl(100px + 100)</p>
 
       
@@ -317,6 +316,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-Sass/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CSS预处理器-Sass
+        
+      </div>
+    </a>
   
   
     <a href="/2021/04/11/hexo%E9%A6%96%E6%AC%A1%E5%88%9B%E5%BB%BA/" id="article-nav-older" class="article-nav-link-wrap">

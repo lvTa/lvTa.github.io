@@ -6,17 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>CSS预处理器-Sass | Hexo</title>
+  <title>CSS预处理器 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="CSS预处理器-Sass">
-<meta property="og:url" content="http://example.com/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-Sass/index.html">
+  <meta name="description" content="CSS预处理器的优缺点优点CSS预处理器为CSS增加了一些编程的特性，不需要考虑浏览器的兼容性问题，支持嵌套、变量等。让CSS更加简洁、逻辑分明，提高代码的复用性    缺点CSS的文件体积和复杂度不可控，代码的调式难度和成本更大       环境配置现有框架已经提供了css预处理器选项，编译相关配置会自动帮我们生成。所以在’练习’的情况下才有必要安装相关的环境 安装分类不依赖编辑器全局安装scs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS预处理器">
+<meta property="og:url" content="http://example.com/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="CSS预处理器的优缺点优点CSS预处理器为CSS增加了一些编程的特性，不需要考虑浏览器的兼容性问题，支持嵌套、变量等。让CSS更加简洁、逻辑分明，提高代码的复用性    缺点CSS的文件体积和复杂度不可控，代码的调式难度和成本更大       环境配置现有框架已经提供了css预处理器选项，编译相关配置会自动帮我们生成。所以在’练习’的情况下才有必要安装相关的环境 安装分类不依赖编辑器全局安装scs">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-04-14T07:28:27.000Z">
-<meta property="article:modified_time" content="2021-04-14T07:28:27.231Z">
+<meta property="og:image" content="http://example.com/assets/images/less_extend1.png">
+<meta property="og:image" content="http://example.com/assets/images/less_extend2.png">
+<meta property="og:image" content="http://example.com/assets/images/less_extend3.png">
+<meta property="og:image" content="http://example.com/assets/images/less_extend4.png">
+<meta property="og:image" content="http://example.com/assets/images/less_extend5.png">
+<meta property="article:published_time" content="2021-04-14T08:26:31.000Z">
+<meta property="article:modified_time" content="2021-04-14T17:37:24.548Z">
 <meta property="article:author" content="一笑奈何">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/images/less_extend1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -99,6 +107,21 @@
 				</div>
 			
 		</nav>
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主 页</a></li>
+			
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随 笔</a></li>
+			
+				<li><a href="/archives/index.html">归 档</a></li>
+			
+			</ul>
+		</nav>
+		<nav>
+			总文章数 1
+		</nav>
 	</header>		
 </div>
 
@@ -168,27 +191,413 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS预处理器-Sass" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-CSS预处理器" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CSS预处理器-Sass
+      CSS预处理器
     </h1>
   
 
         
-        <a href="/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-Sass/" class="archive-article-date">
-  	<time datetime="2021-04-14T07:28:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-14</time>
+        <a href="/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" class="archive-article-date">
+  	<time datetime="2021-04-14T08:26:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="CSS预处理器的优缺点"><a href="#CSS预处理器的优缺点" class="headerlink" title="CSS预处理器的优缺点"></a>CSS预处理器的优缺点</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>CSS预处理器为CSS增加了一些编程的特性，不需要考虑浏览器的兼容性问题，支持嵌套、变量等。让CSS更加简洁、逻辑分明，提高代码的复用性   </p>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>CSS的文件体积和复杂度不可控，代码的调式难度和成本更大      </p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>现有框架已经提供了css预处理器选项，编译相关配置会自动帮我们生成。所以在’练习’的情况下才有必要安装相关的环境</p>
+<h1 id="安装分类"><a href="#安装分类" class="headerlink" title="安装分类"></a>安装分类</h1><h2 id="不依赖编辑器"><a href="#不依赖编辑器" class="headerlink" title="不依赖编辑器"></a>不依赖编辑器</h2><p>全局安装scss预处理器，使用终端命令实现编译</p>
+<h3 id="node环境下的node-scss模块"><a href="#node环境下的node-scss模块" class="headerlink" title="node环境下的node-scss模块"></a>node环境下的node-scss模块</h3><h4 id="安装node-sass"><a href="#安装node-sass" class="headerlink" title="安装node-sass"></a>安装node-sass</h4><p>npm i -g node-sass</p>
+<h4 id="查看node-sass是否安装成功"><a href="#查看node-sass是否安装成功" class="headerlink" title="查看node-sass是否安装成功"></a>查看node-sass是否安装成功</h4><p>node-sass -v</p>
+<h2 id="依赖编辑器"><a href="#依赖编辑器" class="headerlink" title="依赖编辑器"></a>依赖编辑器</h2><h3 id="IDE代表：webstorm"><a href="#IDE代表：webstorm" class="headerlink" title="IDE代表：webstorm"></a>IDE代表：webstorm</h3><p>前提是安装了命令行编译工具，配置自动命令，另外安装一个代码提示插件scss</p>
+<ul>
+<li>安装上述命令行工具之一（以node-sass为例演示）</li>
+<li>依次打开并点击：File -&gt; Settings -&gt; Tools -&gt; Files Watchers -&gt; + -&gt; 选择SCSS文件标识</li>
+<li>Name随意写，供自己看而已</li>
+<li>File Type选择SCSS Style Sheet</li>
+<li>Scope选择All Places</li>
+<li>Program选择安装的node-sass对应的cmd文件（node-sass.cmd）</li>
+<li>Arguments按需选择（这里以*$FileName$:$FileNameWithoutExtension$.css*为例）</li>
+<li>Output paths to refresh按需选择（这里以*$FileNameWithoutExtension$.css*为例）</li>
+<li>点击OK，配置完成</li>
+</ul>
+<h3 id="编辑器代表：VSCode"><a href="#编辑器代表：VSCode" class="headerlink" title="编辑器代表：VSCode"></a>编辑器代表：VSCode</h3><p>安装Easy Sass（编译插件）和Sass（代码提示）两个插件，注意大小写<br>1.在扩展中搜索Easy Sass和Sass，点击安装</p>
+<h1 id="CSS预处理器-Sass"><a href="#CSS预处理器-Sass" class="headerlink" title="CSS预处理器-Sass"></a>CSS预处理器-Sass</h1><h2 id="Sass定义"><a href="#Sass定义" class="headerlink" title="Sass定义"></a>Sass定义</h2><p>Sass是一个css预处理器，可以减少css重复的代码，完全兼容所有版本的css。是一门弱类型的语言</p>
+<h2 id="为什么要使用Sass"><a href="#为什么要使用Sass" class="headerlink" title="为什么要使用Sass"></a>为什么要使用Sass</h2><ul>
+<li>可以使用变量</li>
+<li>能自动转换RGBA颜色值</li>
+<li>浏览器兼容性比css更好</li>
+<li>使用嵌套规则减少了大量的重复选择器</li>
+<li>自动压缩css</li>
+</ul>
+<h2 id="Sass和Scss的区别"><a href="#Sass和Scss的区别" class="headerlink" title="Sass和Scss的区别"></a>Sass和Scss的区别</h2><ul>
+<li>Sass有两套语法：<ul>
+<li>第一种或者最新的语法被称为Scss，它是css语法的扩展。这种语法的文件扩展名为.scss</li>
+<li>第二种或更旧的语法被称为Sass，提供了一种更为简洁的css编写方式，它使用缩进而不是{}来表示选择器的嵌套，使用换行符而不是分号来分隔属性。这种语法的文件扩展名为.sass</li>
+</ul>
+</li>
+</ul>
+<p>任何一种格式都可以直接导入（@import）到另一种格式中使用，或者通过sass-convert命令工具转换成另一种格式<br>.sass在书写样式的时候可以省略{}，使用Tab缩进符来控制层次；.scss在书写样式的时候与原生css的书写格式一致</p>
+<p>.sass格式：</p>
+<pre><code>body
+    background: red;
+</code></pre>
+<p>.scss格式：</p>
+<pre><code>body &#123;
+    background: green;
+&#125;
+</code></pre>
+<p>应用场景：<br>一个新项目可以使用.sass，如果是一个旧的项目就不建议使用.sass，这样的工作量很大；.scss在使用的时候可以直接将一个css文件的后缀改为.scss    </p>
+<h2 id="Sass语法"><a href="#Sass语法" class="headerlink" title="Sass语法"></a>Sass语法</h2><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><ul>
+<li>/**/<br>使用这个注释，则里面的内容会被输出到编译后的css文件中</li>
+<li>//<br>使用这个注释，由它注释的内容不会输出到编译后的css文件中</li>
+<li>!<br>将 ! 作为多行注释的第一个字符表示在压缩输出模式下保留这条注释并输出到 CSS 文件中，通常用于添加版权信息。</li>
+</ul>
+<p>例：</p>
+<pre><code>$author: &#39;gdream@126.com&#39;;
+/*!
+    Author: #&#123;$author&#125;
+*/
+</code></pre>
+<p>压缩输出：</p>
+<pre><code>/*!
+    Author: &#39;gdream@126.com&#39;
+*/
+</code></pre>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><h4 id="定义和使用"><a href="#定义和使用" class="headerlink" title="定义和使用"></a>定义和使用</h4><p>语法：$+变量名: 值;</p>
+<p>例：</p>
+<pre><code>$color: #00a4ff;
+#app &#123;
+    background: $color;
+&#125;
+</code></pre>
+<h4 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h4><p>变量支持块级作用域，嵌套规则内定义的变量只能在嵌套规则内使用（局部变量），不在嵌套规则内定义的变量则可在任何地方使用（全局变量）。将局部变量转换为全局变量可以添加 !global 声明</p>
+<p>例：</p>
+<pre><code>#foo &#123;
+    $width: 5em !global;
+     width: $width;
+&#125;
+#bar &#123;
+    width: $width;
+&#125;
+</code></pre>
+<p>编译后：</p>
+<pre><code>#foo &#123;
+    width: 5em;
+&#125;
+#bar &#123;
+    width: 5em;
+&#125;
+</code></pre>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>Sass支持7种主要的数据类型：<br>判断数据类型的方式：<strong>type-of($value)</strong></p>
+<h4 id="字符串-Strings"><a href="#字符串-Strings" class="headerlink" title="字符串(Strings)"></a>字符串(Strings)</h4><p>Sass支持CSS的两种字符串类型：<strong>有引号字符串</strong>和<strong>无引号字符串</strong><br><strong>如：”foo”, ‘bar’, baz</strong></p>
+<pre><code>$name: &#39;Tom Bob&#39;;
+$container: &quot;top bottom&quot;;
+$what: heart;
+</code></pre>
+<p><strong>注：在编译 CSS 文件时不会改变其类型。只有一种情况例外，使用 <code>#&#123;&#125;</code> (interpolation) 时，有引号字符串将被编译为无引号字符串，这样便于在 mixin 中引用选择器名</strong></p>
+<h4 id="数字-Numbers"><a href="#数字-Numbers" class="headerlink" title="数字(Numbers)"></a>数字(Numbers)</h4><p>Sass支持两种数字类型：<strong>带单位数字</strong>和<strong>不带单位数字</strong>。(可正可负可为零，可整可浮点)<br>如：<strong>1, 2, 13, 10px</strong></p>
+<pre><code>$my-age: 19;
+$your-age: 19.5;
+$height: 120px;
+注：单位会和数字当做一个整体，进行算数运算
+</code></pre>
+<h4 id="空值-null"><a href="#空值-null" class="headerlink" title="空值(null)"></a>空值(null)</h4><p>只有一个值null</p>
+<pre><code>$nullVau: null;
+null表示一个空值，不能与任何类型进行算数运算
+</code></pre>
+<h4 id="布尔型-Booleans"><a href="#布尔型-Booleans" class="headerlink" title="布尔型(Booleans)"></a>布尔型(Booleans)</h4><p>只有两个取值：<strong>true</strong>和<strong>false</strong></p>
+<pre><code>$a: true;
+$b: false;
+注：只有自身是false和null才会返回false，其他一切都将返回true
+</code></pre>
+<h4 id="数组-Lists"><a href="#数组-Lists" class="headerlink" title="数组(Lists)"></a>数组(Lists)</h4><p>通过<strong>空格</strong>或者<strong>逗号</strong>分隔的一系列的值。独立的值也能被视为数组 —— 只包含一个值的数组。索引从1开始</p>
+<pre><code>$list0: 1px 2px 5px 6px;
+$list1: 1px 2px, 5px 6px;
+$list2: (1px 2px) (5px 6px);
+</code></pre>
+<p>数组中可以包含子数组，比如<strong>1px 2px, 5px 6px</strong>是包含<strong>1px 2px</strong>与<strong>5px 6px</strong>两个数组的数组。<br>如果内外两层数组使用相同的分隔方式，需要用圆括号包裹内层，所以也可以写成 <strong>(1px 2px) (5px 6px)</strong> 。<br>区别是之前的 <strong>1px 2px, 5px 6px</strong> 使用逗号分割了两个子数组，而 <strong>(1px 2px) (5px 6px)</strong> 则使用空格分割。<br>这两种写法在编译成CSS时是完全一样的，但是在Sass文件中却有不同的意义，前者是包含两个数组的数组，而后者是包含四个值的数组。</p>
+<p>**()**表示不包含任何值的空数组（在 Sass 3.3 版之后也视为空的map）。空数组不可以直接编译成 CSS，比如编译 <strong>font-family: ()</strong> Sass 将会报错。如果数组中包含空数组或空值，编译时将被清除，比如 1px 2px () 3px 或 1px 2px null 3px。</p>
+<p>基于逗号分隔的数组允许保留结尾的逗号，这样做的意义是强调数组的结构关系，尤其是需要声明只包含单个值的数组时。例如 <strong>(1,)</strong> 表示只包含 <strong>1</strong> 的数组，而 <strong>(1 2 3,)</strong> 表示包含 <strong>1 2 3</strong> 这个以空格分隔的数组的数组。</p>
+<h4 id="映射-Maps"><a href="#映射-Maps" class="headerlink" title="映射(Maps)"></a>映射(Maps)</h4><p>Maps必须被圆括号包围，可以映射任何类型键值对（任何类型，包括内嵌maps，不过不推荐这种内嵌方式）<br>相当于 JavaScript 的 object，**(key1: value1, key2: value2)**</p>
+<pre><code>$map: ( 
+    $key1: value1, 
+    $key2: value2, 
+    $key3: value3 
+)
+</code></pre>
+<h4 id="颜色-Colors"><a href="#颜色-Colors" class="headerlink" title="颜色 (Colors)"></a>颜色 (Colors)</h4><p>CSS原有颜色类型，十六进制、RGB、RGBA、HSL、HSLA和色彩单词<br>SCSS提供了内置Colors函数，从而更方便地使用颜色</p>
+<pre><code>$color0: green;
+$color1: lighten($color, 15%);
+$color2: darken($color, 15%);
+$color3: saturate($color, 15%);
+$color4: desaturate($color, 15%);
+$color5: (green + red);
+</code></pre>
+<hr>
+<h3 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h3><h4 id="数字运算符"><a href="#数字运算符" class="headerlink" title="数字运算符"></a>数字运算符</h4><p>Sass支持数字的加减乘除、取余等运算，如果必要会在不同单位间转换值。<br>如果要保留运算符号，应该使用插值语法</p>
+<h5 id="加"><a href="#加" class="headerlink" title="加(+)"></a>加(+)</h5><pre><code>// 纯数字
+$add1: 1 + 2;    // 3
+$add2: 1 + 2px; // 3px
+$add3: 1px + 2; // 3px
+$add4: 1px + 2px;//3px
+
+// 纯字符串
+$add5: &quot;a&quot; + &quot;b&quot;; // &quot;ab&quot;
+$add6: &quot;a&quot; + b;      // &quot;ab&quot;
+$add7: a + &quot;b&quot;;      // ab
+$add8: a + b;      // ab
+
+// 数字和字符串
+$add9: 1 + a;    // 1a
+$adda: a + 1;    // a1
+$addb: &quot;1&quot; + a; // &quot;1a&quot;
+$addc: 1 + &quot;a&quot;; // &quot;1a&quot;
+$addd: &quot;a&quot; + 1; // &quot;a1&quot;
+$adde: a + &quot;1&quot;; // a1
+$addf: 1 + &quot;1&quot;; // &quot;11&quot;
+</code></pre>
+<ul>
+<li>纯数字：只要有单位，结果必有单位</li>
+<li>纯字符串：<em>第一个字符串有无引号</em>决定结果 是否有引号</li>
+<li>数字和字符串：第一位有引号，结果必有引号；第一位对应数字非数字且最后一位带有引号，则结果必为引号</li>
+</ul>
+<h5 id="减"><a href="#减" class="headerlink" title="减(-)"></a>减(-)</h5><pre><code>$add1: 1 - 2;    // -1
+$add2: 1 - 2px; // -1px
+$add3: 1px - 2; // -1px
+$add4: 1px - 2px;//-1px
+
+$sub1: a - 1;  // a-1
+$sub2: 1 - a;  // 1-a
+$sub3: &quot;a&quot; - 1;// &quot;a&quot;-1
+$sub4: a - &quot;1&quot;;// a-&quot;1&quot;
+</code></pre>
+<ul>
+<li>前部分必须为数字，且两端只能有一个是以字符结尾的</li>
+<li>两端的值有一个不是以数字开头的，编译结果就是去除空格后按顺序拼接，包括引号</li>
+</ul>
+<h5 id="乘"><a href="#乘" class="headerlink" title="乘(*)"></a>乘(*)</h5><pre><code>$num1: 1 * 2;    // 2
+$mul2: 1 * 2px;  // 2px
+$num3: 1px * 2;  // 2px
+$num4: 2px * 2px;// 编译不通过
+$num5: 1 * 2abc; // 2abc
+</code></pre>
+<ul>
+<li>运算符前面的部分必须是数字</li>
+<li>运算符两端只能有一个部分是字符串结尾</li>
+</ul>
+<h5 id="除"><a href="#除" class="headerlink" title="除(/)"></a>除(/)</h5><ul>
+<li>不会四舍五入，精确到小数点后5位</li>
+<li>每个字段前部分必须为数字，且当前者只是单纯数字无单位时，后者不能有字符。其余结果就按顺序去除空格后拼接起来。<br>(因为此时后缀被当被单位看待了)</li>
+</ul>
+<h5 id="取余"><a href="#取余" class="headerlink" title="取余(%)"></a>取余(%)</h5><ul>
+<li>值与运算符之间必须要有空格，否则会被看做字符串</li>
+</ul>
+<h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><p>大前提：运算符两端必须为<strong>数字</strong>或<strong>前部分数字后部分字符</strong><br>返回值：<strong>true</strong> or <strong>false</strong></p>
+<h5 id="大于-gt"><a href="#大于-gt" class="headerlink" title="大于(&gt;)"></a>大于(&gt;)</h5><pre><code>$a: 1 &gt; 2; // false
+</code></pre>
+<h5 id="小于-lt"><a href="#小于-lt" class="headerlink" title="小于(&lt;)"></a>小于(&lt;)</h5><pre><code>$a: 1 &lt; 2; // true
+</code></pre>
+<h5 id="大于等于-gt"><a href="#大于等于-gt" class="headerlink" title="大于等于(&gt;=)"></a>大于等于(&gt;=)</h5><pre><code>$a: 1 &gt;= 2; // false
+</code></pre>
+<h5 id="小于等于-lt"><a href="#小于等于-lt" class="headerlink" title="小于等于(&lt;=)"></a>小于等于(&lt;=)</h5><pre><code>$a: 1 &lt;= 2; // true
+</code></pre>
+<h4 id="相等运算符"><a href="#相等运算符" class="headerlink" title="相等运算符"></a>相等运算符</h4><p>作用范围：相等运算 <strong>==, !=</strong> 可用于所有数据类型<br>返回值：true or false</p>
+<pre><code>$a: 1 == 1px; // true
+$b: &quot;a&quot; == a; // true
+</code></pre>
+<ul>
+<li>前部分为不带引号数字时，对比的仅仅是数字部分；反之，忽略引号，要求字符一一对应</li>
+</ul>
+<h4 id="布尔运算符"><a href="#布尔运算符" class="headerlink" title="布尔运算符"></a>布尔运算符</h4><p>Sass支持布尔型的 <strong>and、or以及not</strong> 运算。</p>
+<pre><code>$a: 1&gt;0 and 0&gt;=5; // false
+</code></pre>
+<ul>
+<li>值与”and”、”or”和”not”之间必须要有空格，否则会被看做字符串</li>
+</ul>
+<h4 id="颜色值运算"><a href="#颜色值运算" class="headerlink" title="颜色值运算"></a>颜色值运算</h4><p>颜色值的运算是分段计算进行的，也就是分别计算红色，绿色，以及蓝色的值</p>
+<h5 id="颜色值与颜色值"><a href="#颜色值与颜色值" class="headerlink" title="颜色值与颜色值"></a>颜色值与颜色值</h5><pre><code>p &#123;
+    color: #010203 + #040506;
+&#125;
+计算 01 + 04 = 05 02 + 05 = 07 03 + 06 = 09，然后编译为
+p &#123;
+    color: #050709;
+&#125;
+</code></pre>
+<h5 id="颜色值与数字"><a href="#颜色值与数字" class="headerlink" title="颜色值与数字"></a>颜色值与数字</h5><pre><code>p &#123;
+    color: #010203 * 2;
+&#125;
+计算 01 * 2 = 02 02 * 2 = 04 03 * 2 = 06，然后编译为
+p &#123;
+    color: #020406;
+&#125;
+</code></pre>
+<h5 id="RGB和HSL"><a href="#RGB和HSL" class="headerlink" title="RGB和HSL"></a>RGB和HSL</h5><p>如果颜色值包含 alpha channel（rgba 或 hsla 两种颜色值），必须拥有相等的 alpha 值才能进行运算，因为算术运算不会作用于 alpha 值。</p>
+<pre><code>p &#123;
+    color: rgba(255, 0, 0, 0.75) + rgba(0, 255, 0, 0.75);
+&#125;
+
+p &#123;
+    color: rgba(255, 255, 0, 0.75);
+&#125;
+</code></pre>
+<h4 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h4><ol>
+<li>()</li>
+<li>*、/、 %</li>
+<li>+、-</li>
+<li><blockquote>
+<p>、&lt;、&gt;=、&lt;=</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="嵌套语法"><a href="#嵌套语法" class="headerlink" title="嵌套语法"></a>嵌套语法</h3><h3 id="杂货语法"><a href="#杂货语法" class="headerlink" title="杂货语法"></a>杂货语法</h3><h4 id="插值语法"><a href="#插值语法" class="headerlink" title="插值语法"></a>插值语法</h4><p>通过 <strong>#{}</strong> 插值语句可以在选择器、属性名和属性值中使用变量。<br>但大多数情况下，这样使用属性值可能还不如直接使用变量方便，但是使用 <strong>#{}</strong> 可以避免 Sass 运行运算表达式，直接编译 CSS。</p>
+<pre><code>$name: foo;
+$attr: border;
+p.#&#123;$name&#125; &#123;
+    #&#123;$attr&#125;-color: $name;
+&#125;
+</code></pre>
+<p>编译后：</p>
+<pre><code>p.foo &#123;
+    border-color: foo;
+&#125;
+</code></pre>
+<h4 id="amp"><a href="#amp" class="headerlink" title="&amp;"></a>&amp;</h4><p>&amp;：表示平级。</p>
+<pre><code>a &#123;
+    color: yellow;
+    &amp;:hover&#123;
+        color: green;
+    &#125;
+    &amp;:active&#123;
+        color: blank;
+    &#125;
+&#125;
+</code></pre>
+<h4 id="default"><a href="#default" class="headerlink" title="!default"></a>!default</h4><p>可以在变量的结尾添加 <strong>!default</strong> 给一个未通过 <strong>!default</strong> 声明赋值的变量赋值。此时，如果变量已经被赋值，不会再被重新赋值，但是如果变量还没有被赋值，则会被赋予新的值。</p>
+<pre><code>$content: &quot;First content&quot;;
+$content: &quot;Second content?&quot; !default;
+$new_content: &quot;First time reference&quot; !default;
+
+#main &#123;
+  content: $content;
+  new-content: $new_content;
+&#125;
+
+编译为：
+#main &#123;
+  content: &quot;First content&quot;;
+  new-content: &quot;First time reference&quot;;
+&#125;
+</code></pre>
+<p><strong>注意：变量是 null（空值）时将视为未被 !default 赋值。</strong></p>
+<h4 id="global"><a href="#global" class="headerlink" title="!global"></a>!global</h4><p>将局部变量提升为全局变量</p>
+<h4 id="optional"><a href="#optional" class="headerlink" title="!optional"></a>!optional</h4><p>当@extend相关代码出现语法错误时，编译器可能会给我们”乱”编译为css，加上这个参数可以在出现问题后不让它编译该部分代码</p>
+<h3 id="Rules与指令"><a href="#Rules与指令" class="headerlink" title="@-Rules与指令"></a>@-Rules与指令</h3><h4 id="import"><a href="#import" class="headerlink" title="@import"></a>@import</h4><p>Sass拓展了 <strong>@import</strong> 的功能，允许其导入scss 或 sass 文件。被导入的文件将会合并编译到同一个 CSS 文件中。另外，被导入的文件中所包含的变量或者混合指令 (mixin) 都可以在导入的文件中使用。</p>
+<p>通常，@import 寻找 Sass 文件并将其导入，但在以下情况下，@import 仅作为普通的 CSS 语句，不会导入任何 Sass 文件。</p>
+<ul>
+<li>文件拓展名是 .css；</li>
+<li>文件名以 http:// 开头；</li>
+<li>文件名是 url()；</li>
+<li>@import 包含 media queries。</li>
+</ul>
+<p>如果不在上述情况内，文件的拓展名是 .scss 或 .sass，则导入成功。没有指定拓展名，Sass会试着寻找文件名相同，拓展名为 .scss 或 .sass 的文件并将其导入。</p>
+<pre><code>// 以下两种方式均可
+@import &quot;foo.scss&quot;;
+@import &quot;foo&quot;;
+
+// 以下方式均不可行
+@import &quot;foo.css&quot;;
+@import &quot;foo&quot; screen;
+@import &quot;http://foo.com/bar&quot;;
+@import url(foo);
+</code></pre>
+<p>Sass 允许同时导入多个文件，例如同时导入 rounded-corners 与 text-shadow 两个文件：</p>
+<pre><code>@import &quot;rounded-corners&quot;, &quot;text-shadow&quot;;
+</code></pre>
+<p>导入文件也可以使用 #{ } 插值语句，但不是通过变量动态导入 Sass 文件，只能作用于 CSS 的 url() 导入方式：</p>
+<pre><code>$family: unquote(&quot;Droid+Sans&quot;);
+@import url(&quot;http://fonts.googleapis.com/css?family=\#&#123;$family&#125;&quot;);
+
+// 编译为：
+@import url(&quot;http://fonts.googleapis.com/css?family=Droid+Sans&quot;);
+</code></pre>
+<p>如果你有一个 Scss 或 Sass 文件需要引入， 但是你又不希望它被编译为一个 CSS 文件， 这时，你就可以在文件名前面加一个下划线，就能避免被编译。<br>这将告诉 Sass 不要把它编译成 CSS 文件。 然后，你就可以像往常一样引入这个文件了，而且还可以省略掉文件名前面的下划线。</p>
+<p>除此之外，还支持嵌套 @import,但是不可以在混合指令 (mixin) 或控制指令 (control directives) 中嵌套 @import。</p>
+<h4 id="media"><a href="#media" class="headerlink" title="@media"></a>@media</h4><p>Sass 中 @media 指令与 CSS 中用法一样，只是增加了一点额外的功能：允许其在 CSS 规则中嵌套。如果 @media 嵌套在 CSS 规则内，编译时，@media 将被编译到文件的最外层，包含嵌套的父选择器。这个功能让 @media 用起来更方便，不需要重复使用选择器，也不会打乱 CSS 的书写流程。</p>
+<pre><code>.sidebar &#123;
+  width: 300px;
+  @media screen and (orientation: landscape) &#123;
+    width: 500px;
+  &#125;
+&#125;
+// 编译为
+.sidebar &#123;
+  width: 300px;
+  @media screen and (orientation: landscape) &#123;
+    width: 500px;
+  &#125;
+&#125;
+</code></pre>
+<p>@media的 queries 允许互相嵌套使用，编译时，Sass 自动添加 and</p>
+<pre><code>@media screen &#123;
+  .sidebar &#123;
+      @media (orientation: landscape) &#123;
+          width: 5o0px;
+      &#125;
+  &#125;
+&#125;
+编译为：
+media screen and (orientation : landscape) &#123;
+    .sidebar &#123;
+        width: 5oopx;
+    &#125;
+&#125;
+</code></pre>
+<p>@media甚至可以使用Sass(比如变量，函数，以及运算符）代替条件的名称或者值</p>
+<pre><code>$media: screen;
+$feature: -webkit-min-device-pixe1-ratio;
+$value: 1.5;
+
+@media #&#123;$media&#125; and ($feature: $value) &#123;
+    .sidebar &#123;
+        width: 500px;
+        &#125;
+&#125;
+编译为:
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) &#123;
+    .sidebar &#123;
+        width: 500px;
+    &#125;
+&#125;
+</code></pre>
+<h4 id="extend"><a href="#extend" class="headerlink" title="@extend"></a>@extend</h4><p>@extend即继承。在设计网页的时候常常遇到这种情况:一个元素使用的样式与另一个元素完全相同，但又添加了额外的样式。<br>总的来看：支持层叠继承、多继承、允许延伸任何定义给单个元素的选择器（但是允许不一定好用)</p>
+<h1 id="CSS预处理器-Less"><a href="#CSS预处理器-Less" class="headerlink" title="CSS预处理器-Less"></a>CSS预处理器-Less</h1><h2 id="Less定义"><a href="#Less定义" class="headerlink" title="Less定义"></a>Less定义</h2><p>Less是一种动态样式语言，属于css预处理器的范畴，它扩展了CSS 语言，增加了变量、Mixin、函数等特性，使CSS更易维护和扩展<br>Less既可以在客户端上运行,也可以借助Node.js在服务端运行  </p>
+<span id="more"></span>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="npm安装"><a href="#npm安装" class="headerlink" title="npm安装"></a>npm安装</h3><p>npm install -g less  </p>
+<h3 id="浏览器端用法"><a href="#浏览器端用法" class="headerlink" title="浏览器端用法"></a>浏览器端用法</h3><p>1.通过link引入less  </p>
+<link rel="stylesheet/less" type="text/css" href=".less文件的路径" />  
+2.通过script引入less.js  
+<script src="less.js" type="text/javascript"></script>   
+
+<h2 id="Less中的注释"><a href="#Less中的注释" class="headerlink" title="Less中的注释"></a>Less中的注释</h2><p>以//开头的注释,不会被编译到css文件中<br>以/**/包裹的注释会被编译到css文件中  </p>
+<h2 id="Less中的变量"><a href="#Less中的变量" class="headerlink" title="Less中的变量"></a>Less中的变量</h2><p>使用@来声明一个变量<br>语法：@+变量名: 变量值;<br>例：@color: pink;<br>1.作为普通属性值使用<br>语法：属性: @变量名<br>例：background: @color<br>2.作为选择器和属性名<br>属性语法：@变量名: 属性值<br>选择器语法：@变量名: (#/.)选择器名<br>使用：@{变量名}<br>例：@selector: #wrap;<br>@mar: margin;<br>@{selector} {}<br>@{mar}: 相关的值<br>3.作为URL:@{ur1}<br>4.变量的延迟加载  </p>
+<h2 id="Less的嵌套规则"><a href="#Less的嵌套规则" class="headerlink" title="Less的嵌套规则"></a>Less的嵌套规则</h2><p>1.&amp;：表示当前的这个样式和上一个的样式平级。如：在使用 :hover、:link等的时候，在它的前面加一个&amp;就表示上一个元素的:hover、:link效果，不会在它们之间出现空格的效果<br>2.基本的嵌套规则  </p>
+<h2 id="Less中的混合-Mixins"><a href="#Less中的混合-Mixins" class="headerlink" title="Less中的混合(Mixins)"></a>Less中的混合(Mixins)</h2><p>混合：就是将一系列属性从一个规则集引入到另一个规则集的方式<br>       例：<br>       定义了一个’类’<br>       .bordered {<br>          border-top: dotted 1px black;<br>          border-bottom: solid 2px black;<br>        }<br>        在其它的规则集中使用定义的’类’<br>        #menu a {<br>          color: #111;<br>          .bordered();<br>        }<br>        .post a {<br>          color: red;<br>          .bordered();<br>        }<br>        .bordered 类所包含的属性就将同时出现在 #menu a 和 .post a 中。</p>
+<p>1.普通混合：在定义的时候名称后面没有跟()，即.bordered，这样定义的类在解析成css文件时也会输出到css文件中<br>2.不带输出的混合：在定义’类’的时候名称后面跟了()，即.bordered()，这样定义的类在解析成css文件时不会输出到css文件中<br>3.带参数的混合：更灵活，但是这种情况实参和形参个数需要一致<br>    .bordered(@w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    #menu a {<br>        color: #111;<br>        .bordered(100px, 100px, pink);<br>    }<br>    .post a {<br>        color: red;<br>        .bordered(200px, 200px, blue);<br>    }<br>4.带参数且带有默认值的混合：实参和形参个数不一致时也不会报错<br>    .bordered(@w: 100px, @h: 100px, @c: #00a4ff) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>5.命名参数：当实参和形参的个数不一致时可以指定这个实参是给谁的<br>    .bordered(@w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    #menu a {<br>        color: #111;<br>        .bordered(@c: pink);<br>    }<br>6.匹配模式：在定义了多个相同的类时，可以给每个类定义一个匹配符，在调用这个类的时候根据这个匹配符来调用对应的类<br>    .bordered(T, @w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    .bordered(R, @w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    .bordered(B, @w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>    .bordered(L, @w, @h, @c) {<br>        width: @w;<br>        height: @h;<br>        background: @c;<br>    }<br>7.@arguments：相当于传进去的实参列表<br>    .bordered(@w, @style, @c) {<br>        border: @arguments;<br>    }<br>    #menu a {<br>        .bordered(1px, solid, #00a4ff);<br>    }</p>
+<h2 id="Less运算"><a href="#Less运算" class="headerlink" title="Less运算"></a>Less运算</h2><p>在Less中可以进行加减乘除的运算<br>在less中计算的双方只需要一方带单位即可</p>
+<h2 id="Less的继承"><a href="#Less的继承" class="headerlink" title="Less的继承"></a>Less的继承</h2><p>继承性能比混合高，但是灵活性没有混合强。把公共的样式抽取到一个类中，使用extend继承，这样编译的css文件中就不会出现公共的样式出现多次的情况</p>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>1.将公共的代码放到一个类中<br><img src="/assets/images/less_extend1.png" alt="将公共的代码放到一个类中"><br>和这个类相关的状态<br><img src="/assets/images/less_extend2.png" alt="和这个类相关的状态"><br>2.使用extend继承<br>如果在要继承的类后面加上all，表示把和这个类相关的所有状态都继承下来：&amp;:extend(.juzhong all);<br><img src="/assets/images/less_extend3.png" alt="使用extend继承"><br>3.最终编译成css文件时的样式<br><img src="/assets/images/less_extend4.png"><br>加了all<br><img src="/assets/images/less_extend5.png"></p>
+<h2 id="Less避免编译"><a href="#Less避免编译" class="headerlink" title="Less避免编译"></a>Less避免编译</h2><p>语法：~”需要避免编译的内容”<br>例：padding: ~”cacl(100px + 100)”<br>编译成css文件后：padding: cacl(100px + 100)  </p>
+
       
 
       
@@ -277,7 +686,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-Sass/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,16 +698,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-  
-    <a href="/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-Less/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CSSt预处理器--Less</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -320,7 +719,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">CSS预处理器的优缺点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text">优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">环境配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%88%86%E7%B1%BB"><span class="toc-number">3.</span> <span class="toc-text">安装分类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E4%BE%9D%E8%B5%96%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">3.1.</span> <span class="toc-text">不依赖编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#node%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84node-scss%E6%A8%A1%E5%9D%97"><span class="toc-number">3.1.1.</span> <span class="toc-text">node环境下的node-scss模块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85node-sass"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">安装node-sass</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bnode-sass%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="toc-number">3.1.1.2.</span> <span class="toc-text">查看node-sass是否安装成功</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BE%9D%E8%B5%96%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">3.2.</span> <span class="toc-text">依赖编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IDE%E4%BB%A3%E8%A1%A8%EF%BC%9Awebstorm"><span class="toc-number">3.2.1.</span> <span class="toc-text">IDE代表：webstorm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E5%99%A8%E4%BB%A3%E8%A1%A8%EF%BC%9AVSCode"><span class="toc-number">3.2.2.</span> <span class="toc-text">编辑器代表：VSCode</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-Sass"><span class="toc-number">4.</span> <span class="toc-text">CSS预处理器-Sass</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Sass%E5%AE%9A%E4%B9%89"><span class="toc-number">4.1.</span> <span class="toc-text">Sass定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8Sass"><span class="toc-number">4.2.</span> <span class="toc-text">为什么要使用Sass</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sass%E5%92%8CScss%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">4.3.</span> <span class="toc-text">Sass和Scss的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sass%E8%AF%AD%E6%B3%95"><span class="toc-number">4.4.</span> <span class="toc-text">Sass语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A"><span class="toc-number">4.4.1.</span> <span class="toc-text">注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">4.4.2.</span> <span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-number">4.4.2.1.</span> <span class="toc-text">定义和使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">4.4.2.2.</span> <span class="toc-text">作用域</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.4.3.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2-Strings"><span class="toc-number">4.4.3.1.</span> <span class="toc-text">字符串(Strings)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%AD%97-Numbers"><span class="toc-number">4.4.3.2.</span> <span class="toc-text">数字(Numbers)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A9%BA%E5%80%BC-null"><span class="toc-number">4.4.3.3.</span> <span class="toc-text">空值(null)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E5%9E%8B-Booleans"><span class="toc-number">4.4.3.4.</span> <span class="toc-text">布尔型(Booleans)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84-Lists"><span class="toc-number">4.4.3.5.</span> <span class="toc-text">数组(Lists)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%A0%E5%B0%84-Maps"><span class="toc-number">4.4.3.6.</span> <span class="toc-text">映射(Maps)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2-Colors"><span class="toc-number">4.4.3.7.</span> <span class="toc-text">颜色 (Colors)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97"><span class="toc-number">4.4.4.</span> <span class="toc-text">运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">4.4.4.1.</span> <span class="toc-text">数字运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A0"><span class="toc-number">4.4.4.1.1.</span> <span class="toc-text">加(+)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%87%8F"><span class="toc-number">4.4.4.1.2.</span> <span class="toc-text">减(-)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B9%98"><span class="toc-number">4.4.4.1.3.</span> <span class="toc-text">乘(*)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%99%A4"><span class="toc-number">4.4.4.1.4.</span> <span class="toc-text">除(&#x2F;)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%96%E4%BD%99"><span class="toc-number">4.4.4.1.5.</span> <span class="toc-text">取余(%)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">4.4.4.2.</span> <span class="toc-text">关系运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A4%A7%E4%BA%8E-gt"><span class="toc-number">4.4.4.2.1.</span> <span class="toc-text">大于(&gt;)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B0%8F%E4%BA%8E-lt"><span class="toc-number">4.4.4.2.2.</span> <span class="toc-text">小于(&lt;)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A4%A7%E4%BA%8E%E7%AD%89%E4%BA%8E-gt"><span class="toc-number">4.4.4.2.3.</span> <span class="toc-text">大于等于(&gt;&#x3D;)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B0%8F%E4%BA%8E%E7%AD%89%E4%BA%8E-lt"><span class="toc-number">4.4.4.2.4.</span> <span class="toc-text">小于等于(&lt;&#x3D;)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">4.4.4.3.</span> <span class="toc-text">相等运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">4.4.4.4.</span> <span class="toc-text">布尔运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2%E5%80%BC%E8%BF%90%E7%AE%97"><span class="toc-number">4.4.4.5.</span> <span class="toc-text">颜色值运算</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2%E5%80%BC%E4%B8%8E%E9%A2%9C%E8%89%B2%E5%80%BC"><span class="toc-number">4.4.4.5.1.</span> <span class="toc-text">颜色值与颜色值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2%E5%80%BC%E4%B8%8E%E6%95%B0%E5%AD%97"><span class="toc-number">4.4.4.5.2.</span> <span class="toc-text">颜色值与数字</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#RGB%E5%92%8CHSL"><span class="toc-number">4.4.4.5.3.</span> <span class="toc-text">RGB和HSL</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">4.4.4.6.</span> <span class="toc-text">运算符优先级</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B5%8C%E5%A5%97%E8%AF%AD%E6%B3%95"><span class="toc-number">4.4.5.</span> <span class="toc-text">嵌套语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%82%E8%B4%A7%E8%AF%AD%E6%B3%95"><span class="toc-number">4.4.6.</span> <span class="toc-text">杂货语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%92%E5%80%BC%E8%AF%AD%E6%B3%95"><span class="toc-number">4.4.6.1.</span> <span class="toc-text">插值语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#amp"><span class="toc-number">4.4.6.2.</span> <span class="toc-text">&amp;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#default"><span class="toc-number">4.4.6.3.</span> <span class="toc-text">!default</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#global"><span class="toc-number">4.4.6.4.</span> <span class="toc-text">!global</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#optional"><span class="toc-number">4.4.6.5.</span> <span class="toc-text">!optional</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rules%E4%B8%8E%E6%8C%87%E4%BB%A4"><span class="toc-number">4.4.7.</span> <span class="toc-text">@-Rules与指令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#import"><span class="toc-number">4.4.7.1.</span> <span class="toc-text">@import</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#media"><span class="toc-number">4.4.7.2.</span> <span class="toc-text">@media</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#extend"><span class="toc-number">4.4.7.3.</span> <span class="toc-text">@extend</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-Less"><span class="toc-number">5.</span> <span class="toc-text">CSS预处理器-Less</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Less%E5%AE%9A%E4%B9%89"><span class="toc-number">5.1.</span> <span class="toc-text">Less定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">5.2.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#npm%E5%AE%89%E8%A3%85"><span class="toc-number">5.2.1.</span> <span class="toc-text">npm安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AB%AF%E7%94%A8%E6%B3%95"><span class="toc-number">5.2.2.</span> <span class="toc-text">浏览器端用法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A"><span class="toc-number">5.3.</span> <span class="toc-text">Less中的注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F"><span class="toc-number">5.4.</span> <span class="toc-text">Less中的变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less%E7%9A%84%E5%B5%8C%E5%A5%97%E8%A7%84%E5%88%99"><span class="toc-number">5.5.</span> <span class="toc-text">Less的嵌套规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less%E4%B8%AD%E7%9A%84%E6%B7%B7%E5%90%88-Mixins"><span class="toc-number">5.6.</span> <span class="toc-text">Less中的混合(Mixins)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less%E8%BF%90%E7%AE%97"><span class="toc-number">5.7.</span> <span class="toc-text">Less运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-number">5.8.</span> <span class="toc-text">Less的继承</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">5.8.1.</span> <span class="toc-text">使用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less%E9%81%BF%E5%85%8D%E7%BC%96%E8%AF%91"><span class="toc-number">5.9.</span> <span class="toc-text">Less避免编译</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -341,6 +740,25 @@
 
   
 
+
+
+  
+    <h1 class="article-title" itemprop="name">
+      CSS预处理器
+    </h1>
+  
+
+<!--显示阅读次数-->
+
+  <br/>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
+
+<!--显示阅读次数完毕-->
 
           </div>
         </div>

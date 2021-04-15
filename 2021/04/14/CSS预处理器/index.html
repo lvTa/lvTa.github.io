@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>CSS预处理器 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CSS预处理器的优缺点优点CSS预处理器为CSS增加了一些编程的特性，不需要考虑浏览器的兼容性问题，支持嵌套、变量等。让CSS更加简洁、逻辑分明，提高代码的复用性    缺点CSS的文件体积和复杂度不可控，代码的调式难度和成本更大       环境配置现有框架已经提供了css预处理器选项，编译相关配置会自动帮我们生成。所以在’练习’的情况下才有必要安装相关的环境 安装分类不依赖编辑器全局安装scs">
+  <meta name="description" content="CSS预处理器的优缺点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS预处理器">
 <meta property="og:url" content="http://example.com/2021/04/14/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="CSS预处理器的优缺点优点CSS预处理器为CSS增加了一些编程的特性，不需要考虑浏览器的兼容性问题，支持嵌套、变量等。让CSS更加简洁、逻辑分明，提高代码的复用性    缺点CSS的文件体积和复杂度不可控，代码的调式难度和成本更大       环境配置现有框架已经提供了css预处理器选项，编译相关配置会自动帮我们生成。所以在’练习’的情况下才有必要安装相关的环境 安装分类不依赖编辑器全局安装scs">
+<meta property="og:description" content="CSS预处理器的优缺点">
 <meta property="og:locale">
 <meta property="og:image" content="http://example.com/assets/images/less_extend1.png">
 <meta property="og:image" content="http://example.com/assets/images/less_extend2.png">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://example.com/assets/images/less_extend4.png">
 <meta property="og:image" content="http://example.com/assets/images/less_extend5.png">
 <meta property="article:published_time" content="2021-04-14T08:26:31.000Z">
-<meta property="article:modified_time" content="2021-04-14T17:37:24.548Z">
+<meta property="article:modified_time" content="2021-04-14T18:09:28.238Z">
 <meta property="article:author" content="一笑奈何">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/assets/images/less_extend1.png">
@@ -69,6 +69,9 @@
 	        
 				<li><a href="/archives/index.html">归 档</a></li>
 	        
+			<nav>
+				总文章数 1
+			</nav>
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -106,21 +109,6 @@
 					<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=76 src="//music.163.com/outchain/player?type=2&id=1810729830&auto=0&height=66"></iframe>
 				</div>
 			
-		</nav>
-
-		<nav class="header-menu">
-			<ul>
-			
-				<li><a href="/">主 页</a></li>
-			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随 笔</a></li>
-			
-				<li><a href="/archives/index.html">归 档</a></li>
-			
-			</ul>
-		</nav>
-		<nav>
-			总文章数 1
 		</nav>
 	</header>		
 </div>
@@ -211,7 +199,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="CSS预处理器的优缺点"><a href="#CSS预处理器的优缺点" class="headerlink" title="CSS预处理器的优缺点"></a>CSS预处理器的优缺点</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>CSS预处理器为CSS增加了一些编程的特性，不需要考虑浏览器的兼容性问题，支持嵌套、变量等。让CSS更加简洁、逻辑分明，提高代码的复用性   </p>
+        <h1 id="CSS预处理器的优缺点"><a href="#CSS预处理器的优缺点" class="headerlink" title="CSS预处理器的优缺点"></a>CSS预处理器的优缺点</h1><span id="more"></span>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>CSS预处理器为CSS增加了一些编程的特性，不需要考虑浏览器的兼容性问题，支持嵌套、变量等。让CSS更加简洁、逻辑分明，提高代码的复用性   </p>
 <h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>CSS的文件体积和复杂度不可控，代码的调式难度和成本更大      </p>
 <h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>现有框架已经提供了css预处理器选项，编译相关配置会自动帮我们生成。所以在’练习’的情况下才有必要安装相关的环境</p>
 <h1 id="安装分类"><a href="#安装分类" class="headerlink" title="安装分类"></a>安装分类</h1><h2 id="不依赖编辑器"><a href="#不依赖编辑器" class="headerlink" title="不依赖编辑器"></a>不依赖编辑器</h2><p>全局安装scss预处理器，使用终端命令实现编译</p>
@@ -580,7 +569,7 @@ $value: 1.5;
 </code></pre>
 <h4 id="extend"><a href="#extend" class="headerlink" title="@extend"></a>@extend</h4><p>@extend即继承。在设计网页的时候常常遇到这种情况:一个元素使用的样式与另一个元素完全相同，但又添加了额外的样式。<br>总的来看：支持层叠继承、多继承、允许延伸任何定义给单个元素的选择器（但是允许不一定好用)</p>
 <h1 id="CSS预处理器-Less"><a href="#CSS预处理器-Less" class="headerlink" title="CSS预处理器-Less"></a>CSS预处理器-Less</h1><h2 id="Less定义"><a href="#Less定义" class="headerlink" title="Less定义"></a>Less定义</h2><p>Less是一种动态样式语言，属于css预处理器的范畴，它扩展了CSS 语言，增加了变量、Mixin、函数等特性，使CSS更易维护和扩展<br>Less既可以在客户端上运行,也可以借助Node.js在服务端运行  </p>
-<span id="more"></span>
+<!-- more -->
 
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="npm安装"><a href="#npm安装" class="headerlink" title="npm安装"></a>npm安装</h3><p>npm install -g less  </p>
 <h3 id="浏览器端用法"><a href="#浏览器端用法" class="headerlink" title="浏览器端用法"></a>浏览器端用法</h3><p>1.通过link引入less  </p>
@@ -740,13 +729,6 @@ $value: 1.5;
 
   
 
-
-
-  
-    <h1 class="article-title" itemprop="name">
-      CSS预处理器
-    </h1>
-  
 
 <!--显示阅读次数-->
 
